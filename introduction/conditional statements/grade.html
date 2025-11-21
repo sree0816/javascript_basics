@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1 id="total"></h1>
+    <h1 id="percentage"></h1>
+    <h1 id="grade"></h1>
+
+    <script>
+        let maths=20;
+        let phy=24;
+        let bio=17;
+        let cs=34;
+        let eng=23;
+        total=maths+phy+bio+cs+eng;
+        percentage=total/2.5;
+            document.getElementById('total').innerHTML=total;
+            document.getElementById('percentage').innerHTML=percentage;
+            if (percentage>90)
+            {
+            document.getElementById('grade').innerHTML="A+";
+
+            }
+            else if (percentage>80)
+            {
+            document.getElementById('grade').innerHTML="A";
+
+            }
+            else if (percentage>70)
+            {
+            document.getElementById('grade').innerHTML="B+";
+
+            }
+            else if (percentage>60)
+            {
+            document.getElementById('grade').innerHTML="B";
+
+            }
+            else if (percentage>50)
+            {
+            document.getElementById('grade').innerHTML="C+";
+
+            }
+            else if (percentage>40)
+            {
+            document.getElementById('grade').innerHTML="C";
+
+            }
+            else
+            {
+            document.getElementById('grade').innerHTML="Failed";
+
+            }
+
+            
+        
+    </script>
+    
+</body>
+</html>
