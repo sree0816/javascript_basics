@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let x=prompt('enter x:')
+        n1=parseInt(x)
+        let y=prompt('enter y:')
+        n2=parseInt(y)
+        let result=0;
+        function lcm(n1,n2)
+        {
+            let l=0;
+            if (x>y){
+                l=x;
+            }
+            else{
+                l=y;
+            }
+            i=l;
+            while (1){
+                if (i%x==0 && i%y==0)
+            {
+                result=i;
+                break;
+            }
+            i++;
+            }
+            return result;
+            
+        }
+        document.write('result='+lcm(n1,n2))
+    </script>
+</body>
+</html>
