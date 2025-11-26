@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h3 id="demo"></h3>
+    <script>
+        const employee={
+            eid:1,
+            name:"manu",
+            age:24,
+            place:'kakkanad',
+            company:"luminar",
+            salary:30000,
+            mobile:234698634,
+            email:'manu@gmail.com'
+        }
+        // document.write("id="+employee.eid+"<br>")
+        // document.write("name="+employee.name+"<br>")
+        // document.write("age="+employee.age+"<br>")
+        // document.write("place="+employee.place+"<br>")
+        // document.write("company="+employee.company+"<br>")
+        // document.write("salary="+employee.salary+"<br>")
+        // document.write("mob no="+employee.mobile+"<br>")
+        // document.write("mail="+employee.email+"<br>")
+
+        for (let i in employee){
+            console.log(i +":" + employee[i])
+            document.getElementById('demo').innerHTML+= i+ " : "+ employee[i]+ "<br>"
+        }
+
+
+
+
+    </script>
+</body>
+</html>

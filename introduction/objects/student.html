@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2 id="new"></h2>
+    <script>
+        const stud={
+            name:'anu',
+            age:22,
+            place:'cochin'
+        }
+        document.write("name=" +stud.name +"<br> age="+stud.age +"<br> place=" +stud.place)
+        stud.course="B.tech"
+        stud.age=25;
+        document.getElementById('new').innerHTML="name=" +stud.name +"<br> age="+stud.age +"<br> place=" +stud.place +"<br> course=" +stud.course ;
+        delete stud.age;
+        console.log(stud)
+    </script>
+</body>
+</html>
