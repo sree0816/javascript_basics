@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        const arr=[3,6,8,3,78];
+        
+            let small=arr[0];
+            let large=arr[0];
+            for(let i in arr){
+                if (arr[i]>large){
+                large=arr[i]
+
+            }
+            if (arr[i]<small){
+                small=arr[i]
+            }}
+        document.write("large="+large+"<br>small="+small)
+    </script>
+</body>
+</html>

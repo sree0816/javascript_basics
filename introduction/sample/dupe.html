@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        const arr=[2,5,7,3,2,5,12,4,5,9,9];
+        const res=[]
+        for (let i in arr){
+            let count=0;
+            for (let j in res){
+                if (arr[i]==res[j]){
+                    count+=1;
+                }
+
+            }
+            if (count==0){
+                res.push(arr[i])
+            }
+        }
+        document.write(res)
+    </script>
+</body>
+</html>
