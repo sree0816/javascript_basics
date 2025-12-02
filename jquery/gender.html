@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .gender{
+            margin: auto;
+            height:100px;
+            width:200px;
+            padding:20px;
+
+        }
+        .gender1{
+             margin: auto;
+            height:100px;
+            width:200px;
+            padding:20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="gender">
+        <button class="btn1">select the gender</button>
+
+    </div>
+    <div class="gender1">
+        <select name="" id="">
+            <option >select your gender</option>
+            <option value="male">male</option>
+            <option value="female">female</option>
+            <option value="others">others</option>
+        </select>
+        <br>
+        <button class="back">back</button>
+
+
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script>
+        $(".gender1").hide();
+        $(document).ready(function(){
+            $(".btn1").click(function(){
+                $(".gender1").show();
+            })
+            $(".back").click(function(){
+                $(".gender1").hide();
+
+            })
+        })
+    </script>
+</body>
+</html>
